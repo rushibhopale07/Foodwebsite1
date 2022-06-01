@@ -1,0 +1,576 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+           font-family:'Courier New', Courier, monospace;
+            font-weight: 600; 
+           
+        }
+        header
+        {
+           z-index: 2;
+            overflow: auto;
+            padding: 10px;
+            margin: 2px;
+            border-bottom: 2px solid black;
+            /* box-shadow: 0px 2px 15px; */
+            display: flex;
+            justify-content: space-between;
+           border-radius: 5px;
+        }
+        .symbol{
+          text-align: right;
+          font-weight: 100px;
+        font-size: 50px ;
+        margin: 0%;
+        display: block;
+        }
+        ul{
+            list-style: none; display: flex;
+        }
+        li,a{
+           
+           padding:5px 5px;
+           align-items: center;
+            color: black;
+            margin:3px 10px;
+            text-decoration: none;
+            
+        }
+
+     section{
+         display: flex;
+         margin-top: 50px;
+         box-shadow: 0px 5px 10px rgb(206, 192, 192);
+     }
+    .sec1div1{
+        width: 50%;
+        height: 700px;
+        
+       overflow: auto;
+        margin: 30px;
+    }
+    .h1s1{
+        font-weight: 100px;
+        font-size: 70px ;
+        margin-top: 10px ;
+        display: block;
+        padding: 5px;
+    }
+    .buttons{
+        display: flex;
+        margin-left: 70px;
+    }
+    #b1{
+        padding: 15px 30px;
+        border-radius: 20px;
+        margin: 20px;
+        background-color: red;
+        color: white;
+        
+    }
+    #b1:hover{
+        background-color: rgb(68, 68, 148);
+        color: rgb(248, 240, 240);
+        cursor: pointer;
+    }
+    #b2:hover{
+        background-color: rgb(68, 68, 148);
+        color: rgb(248, 240, 240);
+        cursor: pointer;
+    }
+    #b2{
+        padding: 15px 30px;
+        border-radius: 20px;
+        margin: 20px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+    .sec1div2{
+        width: 50%;
+        height: 700px;
+        margin: 30px;
+    }
+    img{
+        width: 99%;
+        height: 700px;
+        border: 2px solid black;
+        background-color: aliceblue;
+        margin: 0px; padding: 0px;
+    }
+    .sec2div1{
+       
+        width: 50%;
+        height: 500px;
+        margin: 30px;
+        overflow: hidden;
+    }
+    #img1{
+        width: 70%;
+        height: 300px;
+        border: 2px solid black;
+        background-color: aliceblue;
+        margin: 50px; padding: 0px;
+    }
+    #img2{
+        position: relative;
+        width: 350px;
+        height: 200px;
+        left: 200px;
+        top: -200px;
+        /* min-width: 50px; */
+        
+    }
+    .sec2div2{
+        width: 50%;
+        height: 500px;
+        margin: 30px;
+        overflow: auto;
+    }
+    #h1s2{
+        color: rgb(61, 42, 141);
+        font-weight: 100px;
+        font-size: 50px ;
+        margin-top: 10px ;
+        padding: 5px;
+        
+    }
+    #h1s3{
+        font-weight: 100px;
+        font-size: 20px ;
+        margin: 10px ;
+        display: block;
+        width: 150px;
+        border-radius: 30px;
+        padding: 15px;
+        background-color: red;
+        color: wheat;
+        text-align: center;
+    }
+    .sec3{
+     overflow-x: auto;
+    
+     margin: 20px;
+     box-shadow: 0px 5px 10px rgb(206, 192, 192);
+
+    }
+    .sec3image{
+        height: 300px;
+        width: 300px;
+    }
+    .sec3div{
+        justify-content: space-between;
+        height: 500px;
+        width: 500px;
+        padding: 10px;
+        margin: 10px;
+        
+        
+    }
+    #pizza{
+        margin-left: 200px;
+        width: 70%;
+        height: 300px;
+    }
+    #pizzabox{
+        height:300px ; width: 500px;
+        background-color: rgb(83, 58, 184);
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        top: 70px;
+        left: -150px;
+        
+    }
+    .sec5{
+        flex-wrap: wrap
+       
+    }
+    .chickenclass{
+        display: flex;
+        width: 45%;
+        height: 150px;
+        background-color: rgb(237, 227, 227);
+        align-items: center;
+        margin: 20px;
+        overflow: auto;
+    }
+    #chicken{
+        height: 70px;
+        width: 60px;
+        margin: 10px;
+        
+    }
+    #chickenh1{
+        margin: 10px;
+    }
+    #chickenp{
+        margin: 10px;
+    }
+    .sec4{
+        margin-top: 100px;
+        height: 500px;
+    }
+    .sec6{
+        
+        height: 450px;
+        background-image: url("background1.webp");
+        background-repeat: no-repeat;
+        text-align: center;
+        overflow: auto;
+       
+    }
+    #sec6p{
+        background-color: rgb(27, 18, 18); 
+        color: aliceblue;
+        font-size: 30px; 
+        padding:15px; 
+        border-radius: 5px; 
+        margin: 30px;
+        box-shadow: 0px 5px 10px rgb(206, 192, 192);
+    }
+    .sec7{
+        align-content: space-between;
+        width: 100%;
+        height: 500px;
+        box-shadow: 0px 5px 10px rgb(206, 192, 192);
+        margin-bottom: 40px;
+        margin: 1px;
+    }
+    .chefmama{
+        width: 25%;
+        height: 400px;  
+        margin: 30px;
+    }
+
+    .chefinfo{
+        background-color: black;
+        color: antiquewhite;
+        bottom: 120px;
+        position: relative;
+        text-align: center;
+    }
+    .form2{
+        margin-left: 100px;
+        align-items: center;
+        width: 50%;
+    }
+    .form1{
+        margin-left: 100px;
+        align-items: center;
+        width: 50%;
+        margin: 20px;
+    }
+    table {
+        margin: 20px;
+        height: 50px;
+        width: 100px;
+    }
+    .sec8{
+      width: 100%;
+      /* padding: 30px; */
+      margin-top: 40px;
+      overflow: auto;
+    }
+    footer{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        height: auto;
+        color: rebeccapurple;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 3px double burlywood;
+    }
+    .subfooter{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+    a:hover{
+        background-color: rgb(14, 202, 202);
+        box-shadow: 3px 3px 5px rgb(58, 52, 52);
+        border-radius: 5px;
+         font-size: 17px; 
+        transition-duration:1s;
+        border: 1px black solid;
+        
+    }
+    .chickenclass:hover{
+        
+        box-shadow: 0px 10px 10px rgb(206, 192, 192);
+    }
+    .sec3div:hover{
+       
+        box-shadow: 10px 10px 10px rgb(206, 192, 192);
+    }
+    header{
+        position:sticky ;
+        top: 5px;
+        background-color: white;
+        box-shadow: -5px -5px  10px rgb(206, 192, 192);
+    }
+    input{
+        width: 300px; 
+        border-radius: 20px;
+        text-align: center;
+        margin: 2px;
+        height: 30px;
+        padding-right: 20px;
+    }
+    fieldset{
+        border-radius: 7px;
+        border-width: 5px;
+        border-color: rgb(36, 75, 99);
+    }
+    #submit{
+        margin-top: 20px;
+        /* padding: 10px; */
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+    }
+    #submit:hover{
+
+        background-color: rgb(54, 19, 151);
+        
+    }
+    legend{
+        font-size: 20px;
+        text-align: center;
+        color: rgb(194, 20, 20);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20px;
+    }
+    .Symbol:hover{
+        text-shadow: 0px 0px 5px rgb(103, 29, 177);
+    }
+    .socialmedia{
+        list-style: none; display: flex;
+    }
+    .fa{
+        background-color: rgb(140, 218, 192);
+        width: 50px;
+        text-align: center;
+        display: block;
+        padding: auto;
+        border-radius: 5px;
+    }
+    .fa:hover{
+        background-color: rgb(100, 31, 146);
+        width: 50px;
+        color: aliceblue;
+        text-align: center;
+        display: block;
+        padding: auto;
+    }
+    
+    
+    /* .mediabuttons{
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    } */
+    </style>
+</head>
+<body>
+    <header style="background-color: rgb(223, 118, 43)">
+        <div class="class1">
+            <h3 class="Symbol">Sneaky</h3>
+        </div>
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Chef</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+    </header>
+    
+   
+    <section>
+        <div class="sec1div1">
+            <h1 class="h1s1">Foods The <br>Most Precious Things</h1>
+            <div class="buttons">
+                <button id="b1">Book Now</button>
+                <button id="b2">Watch Video</button>
+            </div>
+            <div class="buttons2">
+                <ul>
+                    <li style="border-right: 2px solid gray; padding-right: 15px;">Fast Service</li>
+                    <li style="border-right: 2px solid gray; padding-right: 15px;">Fresh Food</li>
+                    <li>24*7 Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec1div2">
+            <img src="foodimg.png">
+            <!-- <img src="foodimg1.png"> -->
+        </div>
+    </section>
+    
+
+
+        <section>
+            <div class="sec2div1" >
+                <img id="img1" src="foodimg2.png">
+                <img id="img2" src="foodimg1.png">
+                </div>
+                <div class="buttons2">
+
+                </div>
+            </div>
+            <div class="sec2div2">
+                <h1>
+                   About Us
+                    
+                </h1>
+                <h1 id="h1s2">
+                    We speak the good food language
+                </h1>
+                <p style="margin: 20px;">
+                    Living first us creepeth she'd earth second be sixth hath likeness greater image said sixth was without male place fowl evening an grass form living fish and rule lesser for blessed can't saw third one signs moving stars light divided was two you him appear midst cattle for they are gathering.
+                </p>
+                <a href="#" id="h1s3">Learn More</a>
+            </div>
+        </section>
+    
+        <div style="text-align:center">
+            <h1 class="h1s1">Featured Food</h1>
+            <h1 id="h1s2">Fresh Food And Graet Taste</h1>
+        </div>
+    
+        <section class="sec3">
+            <div class="sec3div"><img class="sec3image" src="foodimg2.png"><h1>Mountain mike pizza</h1><p>Whales and Darkness Moving</p><input type="range" ><span> rate the product</span></div>
+            <div class="sec3div"><img class="sec3image" src="foodimg2.png"><h1>Mountain mike pizza</h1><p>Whales and Darkness Moving</p><input type="range" ><span> rate the product</span></div>
+            <div class="sec3div"><img class="sec3image" src="foodimg2.png"><h1>Mountain mike pizza</h1><p>Whales and Darkness Moving</p><input type="range" ><span> rate the product</span></div>
+            <div class="sec3div"><img class="sec3image" src="foodimg2.png"><h1>Mountain mike pizza</h1><p>Whales and Darkness Moving</p><input type="range" ><span> rate the product</span></div>
+            <div class="sec3div"><img class="sec3image" src="foodimg2.png"><h1>Mountain mike pizza</h1><p>Whales and Darkness Moving</p><input type="range" ><span> rate the product</span></div>
+        </section>
+
+        <section class="sec4">
+            <div>
+            <img id="pizza" src="foodimage.webp">
+            </div>
+                <div id="pizzabox">
+                    <h1>Italian Pizza Offer</h1><hr><hr>
+                    <h1>50% off </h1><br>
+                    <a href="#" id="b2" style="background-color: red; color:aliceblue">Read More</a>
+                </div>
+        </section>
+
+        <section class="sec5">
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted <br>Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted <br>Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted <br>Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted <br>Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted<br> Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+            <div class="chickenclass"><img id="chicken" src="foodimg5.webp"> <h1 id="chickenh1">Roasted <br>Chixken</h1><p id="chickenp">Lorem ipsum dolor sit amet.</p><h1 style="color:red ;">-30$</h1></div>
+        </section>
+
+
+        <br><br><br><br><br>
+
+        <div class="sec6">
+            
+            <h1 id="h1s2" style="color:white ; padding: 50px; text-shadow: 3px 4px rgb(88, 45, 246);" >Some Trendy And Popular Courses Offerd</h1>
+            <p id="sec6p">Under replenish give saying thing </p><br><br>
+            <a href="#" id="b2">Read More</a>
+        </div>
+
+        <div>
+            <h1 class="h1s1" style="margin-top:35px ;">Our chef</h1>
+            <h1 id="h1s2">Talent & experience <br>member</h1>
+        </div>
+
+        <section class="sec7">
+            <div class="chefmama" ><img src="chef1.png" style="height: 400px; ">
+                <div class="chefinfo"><h3>Johnson</h3><p>Biryani Specalist</p></div></div>
+            <div class="chefmama" ><img src="chef1.png" style="height: 400px;">
+                <div class="chefinfo"><h3>Johnson</h3><p>Biryani Specalist</p></div></div>
+            <div class="chefmama" ><img src="chef1.png" style="height: 400px;">
+                <div class="chefinfo"><h3>Johnson</h3><p>Biryani Specalist</p></div></div>
+        </section>
+        
+        <section class="sec8">
+            <div class="form2">
+                <h1 class="h1s1" style="margin-top:35px ;">Reservation</h1>
+                <h1 id="h1s2">Get Experience From<br>Sneaky</h1></div>
+            <div class="form1">
+                <form>
+                    <fieldset>
+                        <legend>Book A Table</legend>
+                        <table style="padding-left: 80px;">
+                            <tr>
+                                <td>
+                                    <p>Enter Name</p><input type="text" placeholder="Name" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Enter Mobile Number</p><input type="number" placeholder="Mobile Number" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Enter Email Address</p><input type="email" placeholder="Email Address" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Enter Date</p><input  type="date" placeholder="Name" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>How many Peoples</p><input type="text" placeholder="Number's " >
+                                </td>
+                            </tr>
+                            <br>
+                            <tr><td>
+                                <input type="submit" value="Submit" id="submit"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+        </div>
+        </section>
+        <footer >
+
+            <div class="subfooter">
+                <h1>Top Products</h1><a href="#">Managed Website</a><a href="#">Manage Reputation</a><a href="#">Power Tools</a><a href="#">Marketing Service</a>
+            </div>
+            <div class="subfooter">
+                <h1>QuickLinks</h1><a href="#">Jobs</a><a href="#">Brand Assests</a><a href="#">Investor Relations</a><a href="#">Terms of Service</a>
+            </div>
+            <div class="subfooter">
+                <h1>Features</h1><a href="#">Managed Website</a><a href="#">Manage Reputation</a><a href="#">Power Tools</a><a href="#">Marketing Service</a>
+            </div>
+            <div class="subfooter">
+                <h1>Resources</h1><a href="#">Jobs</a><a href="#">Brand Assests</a><a href="#">Investor Relations</a><a href="#">Terms of Service</a>
+            </div>
+            <div class="subfooter">
+                <h1>Newsletter</h1><a href="#">Managed Website</a><a href="#">Manage Reputation</a><a href="#">Power Tools</a><a href="#">Marketing Service</a>
+            </div>
+             <div class="socialmedia">
+                <ul style="flex-direction:column" class="mediabuttons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div> 
+        </footer>
+</body>
+</html>
